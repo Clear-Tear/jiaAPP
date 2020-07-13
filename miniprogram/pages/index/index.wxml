@@ -1,0 +1,45 @@
+<view class="container">
+<swiper duration="100" class='switer_box' indicator-dots="true" indicator-color="gray" indicator-active-color="white">
+
+  <swiper-item>
+    <button type="primary" bindtap="searchVolunteerData">管理员端志愿者查询</button>
+    <view></view>
+  </swiper-item>
+
+  <swiper-item>
+    <button type="primary" bindtap="searchBorrowData">管理员端借用情况查询</button>
+  </swiper-item>
+
+  <swiper-item>
+    <form bindsubmit="addVolunteerData">
+      <input name="name" placeholder="请输入姓名"></input>
+      <input name="studentNumber" placeholder="请输入学号"></input>
+      <input name="phone" placeholder="请输入手机联系方式"></input>
+      <input name="place" placeholder="请输入报名的活动室"></input>
+      <input name="whichTime" placeholder="请输入报名的志愿者时间"></input>
+      <button type="primary" form-type="submit">提交</button>
+    </form>
+  </swiper-item>
+
+  <swiper-item>
+     <form bindsubmit="addBorrowData">
+      <input name="name" placeholder="请输入姓名"></input>
+      <input name="studentNumber" placeholder="请输入学号"></input>
+      <input name="phone" placeholder="请输入手机联系方式"></input>
+      <input name="place" placeholder="请输入借用的活动室"></input>
+      <input name="whichTime" placeholder="请输入借用时间"></input>
+      <input name="organization" placeholder="借用的组织"></input>
+      <input name="reason" placeholder="借用的原因"></input>
+      <button type="primary" form-type="submit">提交</button>
+    </form>
+  </swiper-item>
+
+  <swiper-item>
+    <button type="primary" bindtap="updateVolunteerData">管理员端更改志愿者信息</button>
+  </swiper-item>
+
+  <swiper-item>
+    <button type="primary" bindtap="updateBorrowData">管理员端更改借用信息</button>
+  </swiper-item>
+</swiper>
+</view>
