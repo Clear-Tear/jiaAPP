@@ -1,0 +1,57 @@
+/* miniprogram/pages/index2/index.wxss */
+.switer_box{height: 2000px;}
+
+
+
+.volunitem{
+  background:rgb(247, 240, 240);
+  border:solid 1px blue;
+  height:400rpx;
+}
+
+.borrowitem{
+  background:rgb(247, 240, 240);
+  border:solid 1px blue;
+  height:500rpx;
+}
+
+.mianban{
+  background:rgb(247, 240, 240);
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  font-size: large;
+}
+
+.lan{
+  margin: 20rpx;
+}
+
+.lan1{
+  padding-top:5rpx;
+  background-color:rgb(247, 240, 240);
+}
+
+.left{
+   margin-top: 150rpx;
+   color:#1989fa;
+}
+
+.right{
+  margin-top:150rpx;
+  color:red;
+}
+
+.left2{
+  margin-top: 250rpx;
+  color:#1989fa;
+}
+
+.right2{
+ margin-top:250rpx;
+ color:red;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+}

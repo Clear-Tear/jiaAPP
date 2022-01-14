@@ -1,0 +1,35 @@
+
+.riqi{
+    display: flex; 
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+.riqi_list{
+    width: 25%;
+    height: 100rpx;
+    padding: 2rpx;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px;
+    border:3px solid white;
+}
+.riqi_xuanzhong{
+    background-color: rgb(6, 204, 6);
+    color: white;
+}
+
+.zuowei{
+    display: flex; 
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+.zuowei_list{
+    width: 25%;
+    height: 70rpx;
+    font-size: 30rpx;
+    padding: 0rpx;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px;
+    border:3px solid white;
+}

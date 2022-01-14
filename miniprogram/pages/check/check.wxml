@@ -1,0 +1,10 @@
+<!--miniprogram/pages/check/check.wxml-->
+<scroll-view id='container' scroll-y="true" style="height: 1100rpx;overflow: hidden;">
+<van-cell-group>
+	<van-field label="账号" value="{{ user }}" placeholder="请输入账号" border="{{ false }}" bind:change="onChange1" />
+</van-cell-group>
+<van-cell-group>
+	<van-field label="密码" value="{{ passw }}" type="password" placeholder="请输入密码" border="{{ false }}" bind:change="onChange2" />
+</van-cell-group>
+<van-button type="info" icon="star-o" size="large" bindtap='onJudge'>登录</van-button>
+</scroll-view>

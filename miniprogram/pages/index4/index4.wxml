@@ -1,0 +1,32 @@
+<scroll-view id='container' scroll-y="true" style="height: 1100rpx;overflow: hidden;">
+
+<van-notice-bar
+  mode="link"
+  text="正在志愿者招募中"
+  left-icon="volume-o"
+  bind:click="jumpindex"
+/>
+
+<view class='imag'><van-image
+  round
+  contain
+  width="15rem"
+  height="15rem"
+  src="../image/3.png"
+/>
+</view>
+
+<van-divider contentPosition="center">厦门大学信息学院家文化活动室</van-divider>
+
+<van-cell-group>
+  <van-cell custom-class='biaoti2' title-class='biaoti' title="预约教室使用说明" size='large'icon='diamond'/>
+  <van-cell custom-class='zhengwen2' title-class='zhengwen' title="请先详细阅读志愿者招募通知再进行报名" icon='label-o'/>
+  <van-cell custom-class='zhengwen2' title-class='zhengwen' title="自习不需要预约，活动室无被借用即可自行前往" icon='label-o'/>
+  <van-cell custom-class='zhengwen2' title-class='zhengwen' title="需提前1天登陆系统预约" icon='label-o'/>
+  <van-cell custom-class='zhengwen2' title-class='zhengwen' title="请在借用前阅读文明守则，遵守相关规定，按时使用"icon='label-o'/>
+  <van-cell custom-class='zhengwen2' title-class='zhengwen' title="如遇到问题请咨询电话：18991158532" icon='label-o'/>
+</van-cell-group>
+
+</scroll-view>
+                                         
+

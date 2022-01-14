@@ -1,0 +1,20 @@
+/* pages/index/index.wxss */
+.imag{
+  display:flex;
+  padding-top: 20rpx;
+  justify-content: center;
+}
+.biaoti{
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 5px 0px;
+}
+
+.zhengwen{
+  font-size: small;
+  color:gray;
+}
+
+.zhengwen2{
+  height: 70rpx;
+}

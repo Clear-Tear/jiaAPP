@@ -1,0 +1,151 @@
+<!--
+此文件为开发者工具生成，生成时间: 2020/7/19 下午10:06:08 
+使用方法：
+在 pages\index3\index3.wxml 引入模板
+
+```
+<import src="index3.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 pages\index3\index3.wxss 中引入样式
+```
+@import "./index3.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view is="miniprogram_npm/@vant/weapp/divider/index">
+      <view class="van-divider divider-index--van-divider van-divider--center divider-index--van-divider--center sk-transparent sk-text-20-8333-117 sk-text sk-pseudo sk-pseudo-circle" style="border: none;">
+        请填写您的个人信息
+      </view>
+    </view>
+    <view is="miniprogram_npm/@vant/weapp/cell-group/index">
+      <view class="van-cell-group cell-group-index--van-cell-group van-hairline--top-bottom cell-group-index--van-hairline--top-bottom sk-pseudo sk-pseudo-circle">
+        <view is="miniprogram_npm/@vant/weapp/field/index">
+          <view is="miniprogram_npm/@vant/weapp/cell/index">
+            <view class="field-index--van-field van-cell cell-index--van-cell van-cell--borderless cell-index--van-cell--borderless sk-pseudo sk-pseudo-circle" hover-class="van-cell--hover hover-class" hover-stay-time="70" style="true">
+              <view class="van-cell__title cell-index--van-cell__title sk-transparent sk-text-20-8333-343 sk-text" style="max-width:90px;min-width:90px">
+                我的姓名：
+              </view>
+              <view class="van-cell__value cell-index--van-cell__value ">
+                <view class="van-field__body field-index--van-field__body van-field__body--text field-index--van-field__body--text">
+                  <view class="van-field__input field-index--van-field__input sk-image" cursor="-1" maxlength="-1" placeholder="请输入姓名" placeholder-class="van-field__placeholder" placeholder-style="true" selection-end="-1" selection-start="-1" type="text" value="true">
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view is="miniprogram_npm/@vant/weapp/cell-group/index">
+      <view class="van-cell-group cell-group-index--van-cell-group van-hairline--top-bottom cell-group-index--van-hairline--top-bottom sk-pseudo sk-pseudo-circle">
+        <view is="miniprogram_npm/@vant/weapp/field/index">
+          <view is="miniprogram_npm/@vant/weapp/cell/index">
+            <view class="field-index--van-field van-cell cell-index--van-cell van-cell--borderless cell-index--van-cell--borderless sk-pseudo sk-pseudo-circle" hover-class="van-cell--hover hover-class" hover-stay-time="70" style="true">
+              <view class="van-cell__title cell-index--van-cell__title sk-transparent sk-text-20-8333-292 sk-text" style="max-width:90px;min-width:90px">
+                我的学号：
+              </view>
+              <view class="van-cell__value cell-index--van-cell__value ">
+                <view class="van-field__body field-index--van-field__body van-field__body--text field-index--van-field__body--text">
+                  <view class="van-field__input field-index--van-field__input sk-image" cursor="-1" maxlength="-1" placeholder="请输入学号" placeholder-class="van-field__placeholder" placeholder-style="true" selection-end="-1" selection-start="-1" type="text" value="true">
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view is="miniprogram_npm/@vant/weapp/cell-group/index">
+      <view class="van-cell-group cell-group-index--van-cell-group van-hairline--top-bottom cell-group-index--van-hairline--top-bottom sk-pseudo sk-pseudo-circle">
+        <view is="miniprogram_npm/@vant/weapp/field/index">
+          <view is="miniprogram_npm/@vant/weapp/cell/index">
+            <view class="field-index--van-field van-cell cell-index--van-cell van-cell--borderless cell-index--van-cell--borderless sk-pseudo sk-pseudo-circle" hover-class="van-cell--hover hover-class" hover-stay-time="70" style="true">
+              <view class="van-cell__title cell-index--van-cell__title sk-transparent sk-text-20-8333-946 sk-text" style="max-width:90px;min-width:90px">
+                联系电话：
+              </view>
+              <view class="van-cell__value cell-index--van-cell__value ">
+                <view class="van-field__body field-index--van-field__body van-field__body--text field-index--van-field__body--text">
+                  <view class="van-field__input field-index--van-field__input sk-image" cursor="-1" maxlength="-1" placeholder="请输入电话" placeholder-class="van-field__placeholder" placeholder-style="true" selection-end="-1" selection-start="-1" type="text" value="true">
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view is="miniprogram_npm/@vant/weapp/collapse/index">
+      <view class="van-collapse collapse-index--van-collapse van-hairline--top-bottom collapse-index--van-hairline--top-bottom sk-pseudo sk-pseudo-circle">
+        <view is="miniprogram_npm/@vant/weapp/collapse-item/index">
+          <view class="van-collapse-item item-index--van-collapse-item ">
+            <view is="miniprogram_npm/@vant/weapp/cell/index" class="van-collapse-item__title item-index--van-collapse-item__title">
+              <view class="item-index--van-cell van-cell cell-index--van-cell van-cell--borderless cell-index--van-cell--borderless van-cell--clickable cell-index--van-cell--clickable sk-pseudo sk-pseudo-circle" hover-class="van-cell--hover hover-class" hover-stay-time="70" style="true">
+                <view class="van-cell__title cell-index--van-cell__title sk-transparent sk-text-20-8333-964 sk-text" style="true">
+                  请选择时间：
+                </view>
+                <view is="miniprogram_npm/@vant/weapp/icon/index" class="van-cell__right-icon-wrap cell-index--van-cell__right-icon-wrap item-index--van-cell__right-icon">
+                  <view class="cell-index--van-cell__right-icon van-icon icon-index--van-icon van-icon-arrow icon-index--van-icon-arrow sk-pseudo sk-pseudo-circle" style="color: ;font-size: ;">
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="van-collapse-item__wrapper item-index--van-collapse-item__wrapper van-collapse-item__wrapper--transition item-index--van-collapse-item__wrapper--transition" style="height: 0;">
+              <view class="van-collapse-item__content item-index--van-collapse-item__content ">
+                <view class="zuowei">
+                  <view is="miniprogram_npm/@vant/weapp/button/index" class="zuowei_list" data-v="0" data-value="8" style="border: none;">
+                    <button app-parameter="true" business-id="true" class="van-button button-index--van-button van-button--info button-index--van-button--info van-button--normal button-index--van-button--normal van-button--plain button-index--van-button--plain sk-button sk-pseudo sk-pseudo-circle" data-detail="null" form-type="true" hover-class="van-button--active hover-class" lang="true" open-type="true" send-message-img="true" send-message-path="true" send-message-title="true" session-from="true" style="color: gray; border: none;">
+                      <view class="van-button__text button-index--van-button__text sk-transparent sk-text-15-0000-313 sk-text">
+                        8:00-10:00
+                      </view>
+                    </button>
+                  </view>
+                  <view is="miniprogram_npm/@vant/weapp/button/index" class="zuowei_list" data-v="0" data-value="10" style="border: none;">
+                    <button app-parameter="true" business-id="true" class="van-button button-index--van-button van-button--info button-index--van-button--info van-button--normal button-index--van-button--normal van-button--plain button-index--van-button--plain sk-button sk-pseudo sk-pseudo-circle" data-detail="null" form-type="true" hover-class="van-button--active hover-class" lang="true" open-type="true" send-message-img="true" send-message-path="true" send-message-title="true" session-from="true" style="color: gray; border: none;">
+                      <view class="van-button__text button-index--van-button__text sk-transparent sk-text-15-0000-358 sk-text">
+                        10:00-12:00
+                      </view>
+                    </button>
+                  </view>
+                  <view is="miniprogram_npm/@vant/weapp/button/index" class="zuowei_list" data-v="0" data-value="14" style="border: none;">
+                    <button app-parameter="true" business-id="true" class="van-button button-index--van-button van-button--info button-index--van-button--info van-button--normal button-index--van-button--normal van-button--plain button-index--van-button--plain sk-button sk-pseudo sk-pseudo-circle" data-detail="null" form-type="true" hover-class="van-button--active hover-class" lang="true" open-type="true" send-message-img="true" send-message-path="true" send-message-title="true" session-from="true" style="color: gray; border: none;">
+                      <view class="van-button__text button-index--van-button__text sk-transparent sk-text-15-0000-31 sk-text">
+                        14:00-16:00
+                      </view>
+                    </button>
+                  </view>
+                  <view is="miniprogram_npm/@vant/weapp/button/index" class="zuowei_list" data-v="0" data-value="16" style="border: none;">
+                    <button app-parameter="true" business-id="true" class="van-button button-index--van-button van-button--info button-index--van-button--info van-button--normal button-index--van-button--normal van-button--plain button-index--van-button--plain sk-button sk-pseudo sk-pseudo-circle" data-detail="null" form-type="true" hover-class="van-button--active hover-class" lang="true" open-type="true" send-message-img="true" send-message-path="true" send-message-title="true" session-from="true" style="color: gray; border: none;">
+                      <view class="van-button__text button-index--van-button__text sk-transparent sk-text-15-0000-974 sk-text">
+                        16:00-18:00
+                      </view>
+                    </button>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view is="miniprogram_npm/@vant/weapp/cell/index">
+      <view class="van-cell cell-index--van-cell sk-pseudo sk-pseudo-circle" hover-class="van-cell--hover hover-class" hover-stay-time="70" style="true">
+      </view>
+    </view>
+    <view is="miniprogram_npm/@vant/weapp/button/index">
+      <button app-parameter="true" business-id="true" class="van-button button-index--van-button van-button--info button-index--van-button--info van-button--large button-index--van-button--large van-button--plain button-index--van-button--plain sk-button sk-pseudo sk-pseudo-circle" data-detail="null" form-type="true" hover-class="van-button--active hover-class" lang="true" open-type="true" send-message-img="true" send-message-path="true" send-message-title="true" session-from="true" style="border: none;">
+        <view is="miniprogram_npm/@vant/weapp/icon/index" class="van-button__icon button-index--van-button__icon">
+          <view class="van-icon icon-index--van-icon van-icon-star-o icon-index--van-icon-star-o sk-pseudo sk-pseudo-circle" style="color: ;font-size: 1.2em;line-height: inherit;">
+          </view>
+        </view>
+        <view class="van-button__text button-index--van-button__text sk-transparent sk-text-10-0000-769 sk-text" style="background-position-x: 50%;">
+          提交按钮
+        </view>
+      </button>
+    </view>
+  </view>
+</template>

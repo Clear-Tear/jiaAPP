@@ -1,0 +1,17 @@
+/* miniprogram/pages/check/check.wxss */
+.tijiao_anniu{background-color:rgb(5, 187, 5);color: white;}
+.xinxi{
+    padding: 5px;
+    font-size: 15px;
+}
+.xinxi_xiangmu{
+    padding: 5px;
+    border-bottom: 1px solid gainsboro;
+    display: flex;
+}
+.xinxi_xiangmu1{
+    width: 5em;
+}
+.xinxi_xiangmu2{
+    flex-grow: 1;
+}

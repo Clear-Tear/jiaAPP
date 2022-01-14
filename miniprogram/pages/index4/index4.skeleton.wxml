@@ -1,0 +1,114 @@
+<!--
+此文件为开发者工具生成，生成时间: 2020/7/19 下午10:05:34 
+使用方法：
+在 pages\index4\index4.wxml 引入模板
+
+```
+<import src="index4.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 pages\index4\index4.wxss 中引入样式
+```
+@import "./index4.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <scroll-view scroll-y="true" style="height: 607px;overflow: hidden;" id="container">
+      <view is="miniprogram_npm/@vant/weapp/notice-bar/index">
+        <view class=" van-notice-bar bar-index--van-notice-bar van-notice-bar--withicon bar-index--van-notice-bar--withicon" style="color: #ed6a0c; background-color: #fffbe8;">
+          <view is="miniprogram_npm/@vant/weapp/icon/index" class="van-notice-bar__left-icon bar-index--van-notice-bar__left-icon">
+            <view class="van-icon icon-index--van-icon van-icon-volume-o icon-index--van-icon-volume-o sk-pseudo sk-pseudo-circle" style="color: ;font-size: 16px;">
+            </view>
+          </view>
+          <view class="van-notice-bar__wrap bar-index--van-notice-bar__wrap">
+            <view class="van-notice-bar__content bar-index--van-notice-bar__content sk-transparent sk-text-20-8333-460 sk-text">
+              正在志愿者招募中
+            </view>
+          </view>
+          <navigator open-type="navigate">
+            <view is="miniprogram_npm/@vant/weapp/icon/index" class="van-notice-bar__right-icon bar-index--van-notice-bar__right-icon">
+              <view class="van-icon icon-index--van-icon van-icon-arrow icon-index--van-icon-arrow sk-pseudo sk-pseudo-circle" style="color: ;font-size: ;">
+              </view>
+            </view>
+          </navigator>
+        </view>
+      </view>
+      <view class="imag">
+        <view is="miniprogram_npm/@vant/weapp/image/index">
+          <view class=" van-image image-index--van-image van-image--round image-index--van-image--round" style="width: 15rem;height: 15rem;">
+            <image class="van-image__img image-index--van-image__img sk-image" mode="scaleToFill">
+            </image>
+          </view>
+        </view>
+      </view>
+      <view is="miniprogram_npm/@vant/weapp/divider/index">
+        <view class="van-divider divider-index--van-divider van-divider--center divider-index--van-divider--center sk-transparent sk-text-20-8333-957 sk-text sk-pseudo sk-pseudo-circle" style="border: none;">
+          厦门大学信息学院家文化活动室
+        </view>
+      </view>
+      <view is="miniprogram_npm/@vant/weapp/cell-group/index">
+        <view class="van-cell-group group-index--van-cell-group van-hairline--top-bottom group-index--van-hairline--top-bottom sk-pseudo sk-pseudo-circle">
+          <view is="miniprogram_npm/@vant/weapp/cell/index">
+            <view class="biaoti2 van-cell cell-index--van-cell van-cell--large cell-index--van-cell--large sk-pseudo sk-pseudo-circle" hover-class="van-cell--hover hover-class" hover-stay-time="70" style="true">
+              <view is="miniprogram_npm/@vant/weapp/icon/index" class="van-cell__left-icon-wrap cell-index--van-cell__left-icon-wrap">
+                <view class="cell-index--van-cell__left-icon van-icon icon-index--van-icon van-icon-diamond icon-index--van-icon-diamond sk-pseudo sk-pseudo-circle" style="color: ;font-size: ;">
+                </view>
+              </view>
+              <view class="van-cell__title cell-index--van-cell__title biaoti sk-transparent sk-text-16-6667-830 sk-text" style="true">
+                预约教室使用说明
+              </view>
+            </view>
+          </view>
+          <view is="miniprogram_npm/@vant/weapp/cell/index">
+            <view class="zhengwen2 van-cell cell-index--van-cell sk-pseudo sk-pseudo-circle" hover-class="van-cell--hover hover-class" hover-stay-time="70" style="true">
+              <view is="miniprogram_npm/@vant/weapp/icon/index" class="van-cell__left-icon-wrap cell-index--van-cell__left-icon-wrap">
+                <view class="cell-index--van-cell__left-icon van-icon icon-index--van-icon van-icon-label-o icon-index--van-icon-label-o sk-pseudo sk-pseudo-circle" style="color: ;font-size: ;">
+                </view>
+              </view>
+              <view class="van-cell__title cell-index--van-cell__title zhengwen sk-transparent sk-text-22-9167-382 sk-text" style="true">
+                自习不需要预约，活动室无被借用即可自行前往
+              </view>
+            </view>
+          </view>
+          <view is="miniprogram_npm/@vant/weapp/cell/index">
+            <view class="zhengwen2 van-cell cell-index--van-cell sk-pseudo sk-pseudo-circle" hover-class="van-cell--hover hover-class" hover-stay-time="70" style="true">
+              <view is="miniprogram_npm/@vant/weapp/icon/index" class="van-cell__left-icon-wrap cell-index--van-cell__left-icon-wrap">
+                <view class="cell-index--van-cell__left-icon van-icon icon-index--van-icon van-icon-label-o icon-index--van-icon-label-o sk-pseudo sk-pseudo-circle" style="color: ;font-size: ;">
+                </view>
+              </view>
+              <view class="van-cell__title cell-index--van-cell__title zhengwen sk-transparent sk-text-22-9167-935 sk-text" style="true">
+                需提前1天登陆系统预约
+              </view>
+            </view>
+          </view>
+          <view is="miniprogram_npm/@vant/weapp/cell/index">
+            <view class="zhengwen2 van-cell cell-index--van-cell sk-pseudo sk-pseudo-circle" hover-class="van-cell--hover hover-class" hover-stay-time="70" style="true">
+              <view is="miniprogram_npm/@vant/weapp/icon/index" class="van-cell__left-icon-wrap cell-index--van-cell__left-icon-wrap">
+                <view class="cell-index--van-cell__left-icon van-icon icon-index--van-icon van-icon-label-o icon-index--van-icon-label-o sk-pseudo sk-pseudo-circle" style="color: ;font-size: ;">
+                </view>
+              </view>
+              <view class="van-cell__title cell-index--van-cell__title zhengwen sk-transparent sk-text-22-9167-10 sk-text" style="true">
+                请在借用前阅读文明守则，遵守相关规定，按时使用活动室
+              </view>
+            </view>
+          </view>
+          <view is="miniprogram_npm/@vant/weapp/cell/index">
+            <view class="zhengwen2 van-cell cell-index--van-cell sk-pseudo sk-pseudo-circle" hover-class="van-cell--hover hover-class" hover-stay-time="70" style="true">
+              <view is="miniprogram_npm/@vant/weapp/icon/index" class="van-cell__left-icon-wrap cell-index--van-cell__left-icon-wrap">
+                <view class="cell-index--van-cell__left-icon van-icon icon-index--van-icon van-icon-label-o icon-index--van-icon-label-o sk-pseudo sk-pseudo-circle" style="color: ;font-size: ;">
+                </view>
+              </view>
+              <view class="van-cell__title cell-index--van-cell__title zhengwen sk-transparent sk-text-22-9167-598 sk-text" style="true">
+                如遇到问题请咨询电话：18991158532
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</template>

@@ -1,0 +1,48 @@
+<scroll-view id='container' scroll-y="true" style="height: 1100rpx;overflow: hidden;">
+<van-notice-bar
+  wrapable
+  scrollable="{{ false }}"
+	text="正在招募{{message}}的志愿者" 
+	left-icon="info-o" />
+
+<van-divider contentPosition="center">请填写您的个人信息</van-divider>
+
+<van-cell-group>
+	<van-field label="我的姓名：" value="{{ name }}" placeholder="请输入姓名" border="{{ false }}" bind:change="onChange1" />
+</van-cell-group>
+<van-cell-group>
+	<van-field label="我的学号：" value="{{ stuNum }}" placeholder="请输入学号" border="{{ false }}" bind:change="onChange2" />
+</van-cell-group>
+<van-cell-group>
+	<van-field label="联系电话：" value="{{ phone }}" placeholder="请输入电话" border="{{ false }}" bind:change="onChange3" />
+</van-cell-group>
+
+<van-collapse value="{{ activeNames }}" bind:change="onChange">
+
+
+	<van-collapse-item title="请选择日期：" name="2">
+		<view class="zuowei">
+			<van-button plain type="info" class="zuowei_list" data-value="1" bindtap="selectbutton1" color="{{color1}}">周一</van-button>
+			<van-button plain type="info" class="zuowei_list" data-value="2" bindtap="selectbutton1" color="{{color2}}">周二</van-button>
+			<van-button plain type="info" class="zuowei_list" data-value="3" bindtap="selectbutton1" color="{{color3}}">周三</van-button>
+			<van-button plain type="info" class="zuowei_list" data-value="4" bindtap="selectbutton1" color="{{color4}}">周四</van-button>
+			<van-button plain type="info" class="zuowei_list" data-value="5" bindtap="selectbutton1" color="{{color5}}">周五</van-button>
+			<van-button plain type="info" class="zuowei_list" data-value="6" bindtap="selectbutton1" color="{{color6}}">周六</van-button>
+			<van-button plain type="info" class="zuowei_list" data-value="7" bindtap="selectbutton1" color="{{color7}}">周日</van-button>
+		</view>
+</van-collapse-item>
+
+	<van-collapse-item title="请选择时间：" name="1">
+		<view class="zuowei">
+			<van-button plain type="info" class="zuowei_list" data-value="8" bindtap="selectbutton" color="{{color9}}">8:00-10:00</van-button>
+			<van-button plain type="info" class="zuowei_list" data-value="10" bindtap="selectbutton" color="{{color10}}">10:00-12:00</van-button>
+			<van-button plain type="info" class="zuowei_list" data-value="14" bindtap="selectbutton" color="{{color11}}">14:00-16:00</van-button>
+			<van-button plain type="info" class="zuowei_list" data-value="16" bindtap="selectbutton" color="{{color12}}">16:00-18:00</van-button>
+		</view>
+	</van-collapse-item>
+
+</van-collapse>
+
+<van-cell />
+<van-button plain type="info" icon="star-o" size="large" bindtap='submit'>提交按钮</van-button>
+</scroll-view>

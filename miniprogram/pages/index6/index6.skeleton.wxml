@@ -1,0 +1,182 @@
+<!--
+此文件为开发者工具生成，生成时间: 2020/7/19 下午10:06:29 
+使用方法：
+在 pages\index6\index6.wxml 引入模板
+
+```
+<import src="index6.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 pages\index6\index6.wxss 中引入样式
+```
+@import "./index6.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="toubu">
+      <view class="toubu-zuo">
+        <open-data class="toubu-zuo-touxiang" type="userAvatarUrl" style="border: none;">
+        </open-data>
+      </view>
+      <view class="toubu-you">
+        <view class="toubu-you-txt1">
+          <open-data type="userNickName">
+          </open-data>
+        </view>
+      </view>
+    </view>
+    <view is="miniprogram_npm/@vant/weapp/divider/index">
+      <view class="van-divider divider-index--van-divider van-divider--center divider-index--van-divider--center sk-transparent sk-text-20-8333-738 sk-text sk-pseudo sk-pseudo-circle" style="color: rgb(25, 137, 250); border: none;">
+        借用列表
+      </view>
+    </view>
+    <view>
+      <view is="miniprogram_npm/@vant/weapp/cell/index">
+        <view class="van-cell weapp-cell-index--van-cell sk-pseudo sk-pseudo-circle" hover-class="van-cell--hover hover-class" hover-stay-time="70" style="true">
+          <view is="miniprogram_npm/@vant/weapp/icon/index" class="van-cell__left-icon-wrap weapp-cell-index--van-cell__left-icon-wrap">
+            <view class="weapp-cell-index--van-cell__left-icon van-icon icon-index--van-icon van-icon-todo-list-o icon-index--van-icon-todo-list-o sk-pseudo sk-pseudo-circle" style="color: ;font-size: ;">
+            </view>
+          </view>
+        </view>
+      </view>
+      <view is="miniprogram_npm/@vant/weapp/panel/index">
+        <view class="van-panel panel-index--van-panel van-hairline--top-bottom panel-index--van-hairline--top-bottom sk-pseudo sk-pseudo-circle">
+          <view is="miniprogram_npm/@vant/weapp/cell/index">
+            <view class="van-cell weapp-cell-index--van-cell sk-pseudo sk-pseudo-circle" hover-class="van-cell--hover hover-class" hover-stay-time="70" style="true">
+              <view class="van-cell__title weapp-cell-index--van-cell__title sk-transparent" style="true">
+                美编部
+                <view class="van-cell__label weapp-cell-index--van-cell__label sk-transparent sk-text-16-6667-291 sk-text">
+                  借用原因：例会
+                </view>
+              </view>
+              <view class="van-cell__value weapp-cell-index--van-cell__value panel-index--van-panel__header-value sk-transparent sk-text-20-8333-360 sk-text" style="background-position-x: 100%;">
+                18.00-20.00
+              </view>
+            </view>
+          </view>
+          <view class="van-panel__content panel-index--van-panel__content">
+          </view>
+          <view class="van-panel__footer panel-index--van-panel__footer van-hairline--top panel-index--van-hairline--top sk-pseudo sk-pseudo-circle">
+            <view>
+              <view style="margin-left:303px">
+                <view is="miniprogram_npm/@vant/weapp/tag/index">
+                  <view class="van-tag tag-index--van-tag van-tag--success tag-index--van-tag--success van-tag--medium tag-index--van-tag--medium van-tag--mark tag-index--van-tag--mark sk-transparent sk-text-14-2857-837 sk-text" style="true">
+                    已通过
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view>
+      <view is="miniprogram_npm/@vant/weapp/cell/index">
+        <view class="van-cell weapp-cell-index--van-cell sk-pseudo sk-pseudo-circle" hover-class="van-cell--hover hover-class" hover-stay-time="70" style="true">
+          <view is="miniprogram_npm/@vant/weapp/icon/index" class="van-cell__left-icon-wrap weapp-cell-index--van-cell__left-icon-wrap">
+            <view class="weapp-cell-index--van-cell__left-icon van-icon icon-index--van-icon van-icon-todo-list-o icon-index--van-icon-todo-list-o sk-pseudo sk-pseudo-circle" style="color: ;font-size: ;">
+            </view>
+          </view>
+        </view>
+      </view>
+      <view is="miniprogram_npm/@vant/weapp/panel/index">
+        <view class="van-panel panel-index--van-panel van-hairline--top-bottom panel-index--van-hairline--top-bottom sk-pseudo sk-pseudo-circle">
+          <view is="miniprogram_npm/@vant/weapp/cell/index">
+            <view class="van-cell weapp-cell-index--van-cell sk-pseudo sk-pseudo-circle" hover-class="van-cell--hover hover-class" hover-stay-time="70" style="true">
+              <view class="van-cell__title weapp-cell-index--van-cell__title sk-transparent" style="true">
+                a
+                <view class="van-cell__label weapp-cell-index--van-cell__label sk-transparent sk-text-16-6667-46 sk-text">
+                  借用原因：a
+                </view>
+              </view>
+              <view class="van-cell__value weapp-cell-index--van-cell__value panel-index--van-panel__header-value sk-transparent sk-text-20-8333-386 sk-text" style="background-position-x: 100%;">
+                2020-07-19/14:00-16:00
+              </view>
+            </view>
+          </view>
+          <view class="van-panel__content panel-index--van-panel__content">
+          </view>
+          <view class="van-panel__footer panel-index--van-panel__footer van-hairline--top panel-index--van-hairline--top sk-pseudo sk-pseudo-circle">
+            <view>
+              <view style="margin-left:303px">
+                <view is="miniprogram_npm/@vant/weapp/tag/index">
+                  <view class="van-tag tag-index--van-tag van-tag--success tag-index--van-tag--success van-tag--medium tag-index--van-tag--medium van-tag--mark tag-index--van-tag--mark sk-transparent sk-text-14-2857-24 sk-text" style="true">
+                    已通过
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view>
+      <view is="miniprogram_npm/@vant/weapp/cell/index">
+        <view class="van-cell weapp-cell-index--van-cell sk-pseudo sk-pseudo-circle" hover-class="van-cell--hover hover-class" hover-stay-time="70" style="true">
+          <view is="miniprogram_npm/@vant/weapp/icon/index" class="van-cell__left-icon-wrap weapp-cell-index--van-cell__left-icon-wrap">
+            <view class="weapp-cell-index--van-cell__left-icon van-icon icon-index--van-icon van-icon-todo-list-o icon-index--van-icon-todo-list-o sk-pseudo sk-pseudo-circle" style="color: ;font-size: ;">
+            </view>
+          </view>
+        </view>
+      </view>
+      <view is="miniprogram_npm/@vant/weapp/panel/index">
+        <view class="van-panel panel-index--van-panel van-hairline--top-bottom panel-index--van-hairline--top-bottom sk-pseudo sk-pseudo-circle">
+          <view is="miniprogram_npm/@vant/weapp/cell/index">
+            <view class="van-cell weapp-cell-index--van-cell sk-pseudo sk-pseudo-circle" hover-class="van-cell--hover hover-class" hover-stay-time="70" style="true">
+              <view class="van-cell__title weapp-cell-index--van-cell__title sk-transparent" style="true">
+                a
+                <view class="van-cell__label weapp-cell-index--van-cell__label sk-transparent sk-text-16-6667-927 sk-text">
+                  借用原因：
+                </view>
+              </view>
+              <view class="van-cell__value weapp-cell-index--van-cell__value panel-index--van-panel__header-value sk-transparent sk-text-20-8333-57 sk-text" style="background-position-x: 100%;">
+                2020-07-19/14:00-16:00
+              </view>
+            </view>
+          </view>
+          <view class="van-panel__content panel-index--van-panel__content">
+          </view>
+          <view class="van-panel__footer panel-index--van-panel__footer van-hairline--top panel-index--van-hairline--top sk-pseudo sk-pseudo-circle">
+            <view>
+              <view style="margin-left:303px">
+                <view is="miniprogram_npm/@vant/weapp/tag/index">
+                  <view class="van-tag tag-index--van-tag van-tag--success tag-index--van-tag--success van-tag--medium tag-index--van-tag--medium van-tag--mark tag-index--van-tag--mark sk-transparent sk-text-14-2857-834 sk-text" style="true">
+                    已通过
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view>
+      <view is="miniprogram_npm/@vant/weapp/cell/index">
+        <view class="van-cell weapp-cell-index--van-cell sk-pseudo sk-pseudo-circle" hover-class="van-cell--hover hover-class" hover-stay-time="70" style="true">
+          <view is="miniprogram_npm/@vant/weapp/icon/index" class="van-cell__left-icon-wrap weapp-cell-index--van-cell__left-icon-wrap">
+            <view class="weapp-cell-index--van-cell__left-icon van-icon icon-index--van-icon van-icon-todo-list-o icon-index--van-icon-todo-list-o sk-pseudo sk-pseudo-circle" style="color: ;font-size: ;">
+            </view>
+          </view>
+        </view>
+      </view>
+      <view is="miniprogram_npm/@vant/weapp/panel/index">
+        <view class="van-panel panel-index--van-panel van-hairline--top-bottom panel-index--van-hairline--top-bottom sk-pseudo sk-pseudo-circle">
+          <view is="miniprogram_npm/@vant/weapp/cell/index">
+            <view class="van-cell weapp-cell-index--van-cell sk-pseudo sk-pseudo-circle" hover-class="van-cell--hover hover-class" hover-stay-time="70" style="true">
+              <view class="van-cell__title weapp-cell-index--van-cell__title sk-transparent" style="true">
+                宣传中心
+              </view>
+              <view class="van-cell__value weapp-cell-index--van-cell__value panel-index--van-panel__header-value sk-transparent sk-text-20-8333-854 sk-text" style="background-position-x: 100%;">
+                2020-07-23/14:00-16:00
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

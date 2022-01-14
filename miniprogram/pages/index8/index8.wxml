@@ -1,0 +1,6 @@
+<!--miniprogram/pages/index8/index8.wxml-->
+<van-cell-group>
+ <van-cell custom-class='zhengwen2' title-class='zhengwen' title="如遇到问题请咨询" icon='label-o'/>
+  <van-cell custom-class='zhengwen2' title-class='zhengwen' title="电话：18991158532" icon='label-o'/>
+   <van-cell custom-class='zhengwen2' title-class='zhengwen' title="QQ：1614873230" icon='label-o'/>
+</van-cell-group>

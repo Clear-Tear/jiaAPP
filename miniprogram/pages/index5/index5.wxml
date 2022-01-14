@@ -1,0 +1,112 @@
+<van-divider contentPosition="center" textColor="#1989fa">管理员中心</van-divider>
+
+<van-collapse value="{{ activeNames }}" bind:change="onChange" accordion>
+  <van-collapse-item  name="1">
+    <view slot="title"><van-icon name="diamond-o" />  志愿者录用情况</view>
+    <view class="lan1">
+      <view wx:for="{{volunteerdata}}" class="lan1">
+        <view wx:if="{{item.whetherProcess==true}}" class="lan">
+          <van-cell title="姓名：{{item.name}}"/>
+          <van-cell title="学号：{{item.studentNumber}}"/>
+          <van-cell title="联系方式：{{item.phone}}"/>
+          <van-cell title="志愿时间：{{item.whichTime}}"/>
+        </view>
+      </view>
+    </view>
+  </van-collapse-item>
+
+    <van-collapse-item name="2">
+      <view slot="title"><van-icon name="diamond-o" />  教室借用情况</view>
+      <view class="lan1">
+      <view wx:for="{{borrowdata}}" class="lan1">
+        <view wx:if="{{item.whetherProcess==true}}" class="lan">
+          <van-cell title="姓名：{{item.name}}"/>
+          <van-cell title="学号：{{item.studentNumber}}"/>
+          <van-cell title="联系方式：{{item.phone}}"/>
+          <van-cell title="志愿时间：{{item.whichTime}}"/>
+        </view>
+        </view>
+      </view>
+    </van-collapse-item>
+
+    <van-collapse-item name="3">
+      <view slot="title"><van-icon name="diamond-o" />  设置时间</view>
+    <van-cell-group>
+    <van-divider contentPosition="center">格式：xxxx年/xx学期/第x周-第x周</van-divider>
+  <van-field
+    value="{{ message }}"
+    label="设置招募时间:"
+    type="textarea"
+    autosize
+    border="{{ false }}"
+    bind:change="onChange1"
+  />
+
+  <van-button icon="star-o" plain type="info"custom-style="display: flex;justify-content: center;width:180rpx;" bindtap='submit'>设置</van-button>
+  </van-cell-group>
+
+  </van-collapse-item>
+
+  <van-collapse-item name="4">
+    <view slot="title">
+     <view wx:for="{{volunteerdata}}">
+       <view wx:if="{{item.whetherGet==true}}" color="green"></view>
+        <view wx:if="{{item.whetherGet==false}}"></view>
+      </view>
+      <van-icon name="info-o" color="{{color}}"/>
+      志愿者核审中心
+    </view>
+
+      <view wx:for="{{volunteerdata}}">
+        <view wx:if="{{item.whetherGet==false}}">
+        <view class='mianban'>
+         <van-swipe-cell
+        id="swipe-cell"
+        right-width="60"
+        left-width="60"
+        async-close
+        bind:close="onClose">
+
+        <view slot="left" class="left" bindtap="searchVolunteerData" data-luyong="{{item._id}}" bindtap="updateVolunteerData">录用</view>
+        <van-cell-group custom-class="lan">
+            <van-cell title="姓名：{{item.name}}"/>
+            <van-cell title="学号：{{item.studentNumber}}"/>
+            <van-cell title="联系方式：{{item.phone}}"/>
+            <van-cell title="志愿时间：{{item.whichTime}}"/>
+        </van-cell-group>
+        <view slot="right" class="right" bindtap="searchVolunteerData" data-jujue="{{item._id}}" bindtap="delVolunteerData">拒绝</view>
+      </van-swipe-cell>
+      </view>
+      </view>
+      </view>
+    
+  </van-collapse-item>
+
+  <van-collapse-item name="5">
+    <view slot="title"><van-icon name="info-o" color="{{color}}"/>  教室借用核审中心</view>
+      <view wx:for="{{borrowdata}}">
+        <view wx:if="{{item.whetherGet==false}}">
+        <view class='mianban'>
+         <van-swipe-cell
+        id="swipe-cell"
+        right-width="60"
+        left-width="60"
+        async-close
+        bind:close="onClose"
+      >
+        <view slot="left" class="left2" bindtap="searchBorrowData"   data-luyong="{{item._id}}" bindtap="updateBorrowData">录用</view>
+        <van-cell-group custom-class="lan">
+            <van-cell title="姓名：{{item.name}}"/>
+            <van-cell title="学号：{{item.studentNumber}}"/>
+            <van-cell title="联系方式：{{item.phone}}"/>
+            <van-cell title="借用时间：{{item.whichTime}}"/>
+            <van-cell title="借用组织：{{item.organization}}"/>
+            <van-cell title="借用原因：{{item.reason}}"/>
+        </van-cell-group>
+        <view slot="right" class="right2" bindtap="searchBorrowData" data-jujue="{{item._id}}" bindtap="delBorrowData">拒绝</view>
+      </van-swipe-cell>
+      </view>
+    </view>
+    </view>
+  </van-collapse-item>
+</van-collapse>

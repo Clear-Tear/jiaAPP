@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-skeleton": "@vant/weapp/skeleton/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index"
+  }
+}

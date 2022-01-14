@@ -1,0 +1,57 @@
+<scroll-view id='container' scroll-y="true" style="height: 1100rpx;overflow: hidden;">
+
+<van-divider contentPosition="center" textColor="gray">请填写借用信息</van-divider>
+
+<van-collapse value="{{ activeNames }}" bind:change="onChange">
+
+	<van-collapse-item title="请选择预约日期：" name="1" border="false">
+		<view class="riqi">
+			<van-button plain type="info" class="riqi_list" data-value="1" bindtap="selectbutton" color="{{color1}}">{{time1}}</van-button>
+			<van-button plain type="info" class="riqi_list" data-value="2" bindtap="selectbutton" color="{{color2}}">{{time2}}</van-button>
+			<van-button plain type="info" class="riqi_list" data-value="3" bindtap="selectbutton" color="{{color3}}">{{time3}}</van-button>
+			<van-button plain type="info" class="riqi_list" data-value="4" bindtap="selectbutton" color="{{color4}}">{{time4}}</van-button>
+		</view>
+	</van-collapse-item>
+
+	<van-collapse-item title="请选择人数：" name="2">
+		<view class="zuowei">
+			<van-button plain type="info" class="zuowei_list" data-value="2" bindtap="selectbutton1" color="{{color5}}">2人座</van-button>
+			<van-button plain type="info" class="zuowei_list" data-value="4" bindtap="selectbutton1" color="{{color6}}">4人座</van-button>
+			<van-button plain type="info" class="zuowei_list" data-value="8" bindtap="selectbutton1" color="{{color7}}">8人座</van-button>
+			<van-button plain type="info" class="zuowei_list" data-value="10" bindtap="selectbutton1" color="{{color8}}">10人以上</van-button>
+		</view>
+	</van-collapse-item>
+
+	<van-collapse-item title="请选择时间：" name="3">
+		<view class="zuowei">
+			<van-button plain type="info" class="zuowei_list" data-value="8" bindtap="selectbutton2" color="{{color9}}">8:00-10:00</van-button>
+			<van-button plain type="info" class="zuowei_list" data-value="10" bindtap="selectbutton2" color="{{color10}}">10:00-12:00</van-button>
+			<van-button plain type="info" class="zuowei_list" data-value="14" bindtap="selectbutton2" color="{{color11}}">14:00-16:00</van-button>
+			<van-button plain type="info" class="zuowei_list" data-value="16" bindtap="selectbutton2" color="{{color12}}">16:00-18:00</van-button>
+		</view>
+
+	</van-collapse-item>
+	<van-collapse-item title="{{day}} | {{time}} | {{pop}}" name="4" disabled>
+	</van-collapse-item>
+
+</van-collapse>
+
+<van-cell-group>
+	<van-field label="我的姓名：" value="{{ name }}" placeholder="请输入姓名" border="{{ false }}" bind:change="onChange1" />
+</van-cell-group>
+<van-cell-group>
+	<van-field label="我的学号：" value="{{ stuNum }}" placeholder="请输入学号" border="{{ false }}" bind:change="onChange2" />
+</van-cell-group>
+<van-cell-group>
+	<van-field label="联系电话：" value="{{ phone }}" placeholder="请输入电话" border="{{ false }}" bind:change="onChange3" />
+</van-cell-group>
+<van-cell-group>
+	<van-field label="借用组织：" value="{{ organ }}" placeholder="请输入组织" border="{{ false }}" bind:change="onChange4" />
+</van-cell-group>
+<van-cell-group>
+	<van-field label="借用原因：" value="{{ reason }}" placeholder="请输入原因" border="{{ false }}" bind:change="onChange5" />
+</van-cell-group>
+<van-cell />
+<van-button plain type="info" icon="star-o" size="large" bindtap='submit'>提交按钮</van-button>
+
+</scroll-view>

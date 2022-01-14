@@ -1,0 +1,29 @@
+<!--miniprogram/pages/index7/index7.wxml-->
+<view class='toubu'>
+	<view class='toubu-zuo'>
+		<open-data type="userAvatarUrl" class="toubu-zuo-touxiang"></open-data>
+	</view>
+	<view class='toubu-you'>
+		<view class='toubu-you-txt1'>
+			<open-data type="userNickName"></open-data>
+		</view>
+
+	</view>
+</view>
+<van-divider contentPosition="center" textColor="#1989fa">志愿者报名情况</van-divider>
+<view wx:for="{{list}}" class='lan'>
+ <van-cell icon="todo-list-o" />
+ <van-panel title="{{item.name}}" desc="{{item.studentNumber}}" status="{{item.whichTime}}" use-footer-slot>
+      <view slot="footer">
+          <view wx:if="{{item.whetherProcess==false&&item.whetherGet==true}}" style="margin-left:550rpx">
+          <van-tag mark type="danger" size="medium">已拒绝</van-tag>
+          </view>
+           <view wx:if="{{item.whetherProcess==true}}" style="margin-left:550rpx">
+           <van-tag mark type="success" size="medium">已通过</van-tag>
+           </view>
+            <view wx:if="{{item.whetherGet==false}}" style="margin-left:550rpx">
+           <van-tag mark type="warning" size="medium">待审核</van-tag>
+           </view>
+      </view>
+ </van-panel>
+</view>

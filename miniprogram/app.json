@@ -1,6 +1,15 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index4/index4",
+    "pages/index5/index5",
+    "pages/index3/index3",
+    "pages/index1/index1",
+    "pages/index2/index2",
+    "pages/index6/index6",
+    "pages/index7/index7",
+    "pages/index8/index8",
+    "pages/logo/logo",
+    "pages/check/check"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -9,6 +18,23 @@
     "navigationBarTitleText": "家文化APP",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  "tabBar": {
+    "custom": true,
+    "selectedColor": "#f00",
+    "list": [
+      {
+        "pagePath": "pages/index4/index4"
+      },
+      {
+        "pagePath": "pages/index1/index1"
+      },
+      {
+        "pagePath": "pages/index3/index3"
+      },
+      {
+        "pagePath": "pages/index2/index2"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap37.json"
 }
